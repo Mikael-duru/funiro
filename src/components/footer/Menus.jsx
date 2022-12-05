@@ -1,0 +1,1 @@
+// UI for menu - pass props as arguments
