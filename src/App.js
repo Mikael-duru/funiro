@@ -11,11 +11,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <main>
-          <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Products />} />
-          <Route path="/cart" element={<Cart />} />
-        </main>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </Router>
