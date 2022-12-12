@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes} from "react-router-dom";
 // import Products from "./pages/Products";
 // import Cart from "./pages/Cart";
 // import Header from "./components/Header";
-// import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer"
 import './App.css';
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <Router>
       {/* <Header /> */}
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        {/* <Route path="/products" element={<Products />} /> */}
-        {/* <Route path="/cart" element={<Cart />} /> */}
+        {/* <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Products />} />
+        <Route path="/cart" element={<Cart />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
