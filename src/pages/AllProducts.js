@@ -1,15 +1,9 @@
 import React from "react";
-import "./Products.css";
-import ProductData from "./ProductData";
-import Funiro from "./Funiro";
-import { useNavigate } from "react-router-dom";
+import AllProductData from "./AllProductData";
+import "./AllProducts.css";
 
-// Show More Button Navigation
-const Product = () => {
-  const navigate = useNavigate();
-
-  // !Product Mapping
-  const PdtData = ProductData.map((data, index) => (
+const AllProducts = () => {
+  const PdtData = AllProductData.map((data, index) => (
     <div className="relative group">
       <div className="bg-[#F4F5F7] Card" key={index}>
         <img alt="Avatar" src={data.image} />
@@ -27,8 +21,6 @@ const Product = () => {
         </div>
       </div>
 
-
-      {/* Product On Hover*/}
       <div className="absolute top-0 w-full left-0 h-0 flex justify-center items-center  bg-black opacity-0 group-hover:h-full group-hover:opacity-60 duration-500 transition ease-in-out ">
         <button className="bg-white text-[#e89f71] font-bold py-5 group-hover:opacity-100 rounded px-20">
           Add to Cart
@@ -38,26 +30,13 @@ const Product = () => {
   ));
 
   return (
-    // PRODUCT SECTION
     <div>
-      <div className="ProductContainer">
+      <div className="AllProductContainer">
         <h2 className="font-bold text-4xl text-center my-10">Our Products</h2>
         <div className="grid grid-cols-4 gap-4 w-max">{PdtData}</div>
-
-        {/* Show More Button */}
-        <div className="flex justify-center my-10">
-          <button
-            onClick={() => navigate("AllProducts")}
-            className="px-16 py-4 border-2 border-[#E89F71] text-[#E89F71] font-bold"
-          >
-            Show More
-          </button>
-        </div>
-
-        <Funiro />
       </div>
     </div>
   );
 };
 
-export default Product;
+export default AllProducts;
