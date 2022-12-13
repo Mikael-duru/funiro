@@ -7,16 +7,14 @@ module.exports = {
       "md": "768px",
       "lg": "1024px",
       "xl": "1280px",
-      "xxl": "1440px"
+      "xxl": "1440px",
+      "2xl": "1536px"
     },
     extend: {
       colors: {
         darkGray: "#3A3A3A",
         grayThree: "#898989"
       },
-      spacing: {
-
-      }
     },
   },
   plugins: [],
