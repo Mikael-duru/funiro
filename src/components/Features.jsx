@@ -6,8 +6,8 @@ import customerSupport from "../images/customer-support.svg";
 const Features = () => {
   return (
     <section className="md:pt-10">
-      <div className="pl-5 xxl:pl-12 pt-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-20 xxl:gap-28 xl:flex-nowrap flex-wrap justify-center items-center">
+      <div className="container mx-auto px-5 xxl:pl-[7.77rem] xxl:pr-[2.625rem] pt-16">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-20 xxl:gap-[106px] xl:flex-nowrap flex-wrap justify-center items-center">
           <div className="flex gap-6 items-center w-72">
             <div className="w-10">
               <img src={trophy} alt="" />
@@ -17,7 +17,7 @@ const Features = () => {
               <p className="font-black text-base text-grayThree">crafted from top materials</p>
             </div>
           </div>
-          <div className="flex gap-6 items-center pr-1 w-72 xl:w-64">
+          <div className="flex gap-6 items-center pr-1 w-72 xl:w-[260px]">
             <div className="w-10">
               <img src={guarantee} alt="" />
             </div>
@@ -26,7 +26,7 @@ const Features = () => {
               <p className="font-black text-base text-grayThree">Over 2 years</p>
             </div>
           </div>
-          <div className="flex gap-6 items-center pr-2 w-72 xl:w-52">
+          <div className="flex gap-6 items-center pr-2 w-72 xl:w-[208px]">
             <div className="w-10">
               <img src={shippingIcon} alt="" />
             </div>
@@ -35,7 +35,7 @@ const Features = () => {
               <p className="font-black text-base text-grayThree">Order over 150 $</p>
             </div>
           </div>
-          <div className="flex gap-6 items-center w-72 xl:w-56">
+          <div className="flex gap-6 items-center w-72 xl:w-[215px]">
             <div className="w-10">
               <img src={customerSupport} alt="" />
             </div>

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 // import Products from "./pages/Products";
 // import Cart from "./pages/Cart";
 // import Header from "./components/Header";
-// import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer"
 import './App.css';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         {/* <Route path="/products" element={<Products />} /> */}
         {/* <Route path="/cart" element={<Cart />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
