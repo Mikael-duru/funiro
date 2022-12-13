@@ -1,12 +1,12 @@
 import React from "react";
 import "./Funiro.css";
-import Share1 from "../images/share1.png";
-import Share2 from "../images/share2.png";
-import Share3 from "../images/share3.png";
-import Share4 from "../images/share4.png";
-import Share5 from "../images/share5.png";
-import Share6 from "../images/share6.png";
-import Share7 from "../images/share7.png";
+import Share1 from "../../images/share1.png";
+import Share2 from "../../images/share2.png";
+import Share3 from "../../images/share3.png";
+import Share4 from "../../images/share4.png";
+import Share5 from "../../images/share5.png";
+import Share6 from "../../images/share6.png";
+import Share7 from "../../images/share7.png";
 
 const Funiro = () => {
   return (

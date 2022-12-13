@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.css";
-import ProductData from "./ProductData";
+import ProductData from "../../data/ProductData";
 import Funiro from "./Funiro";
 import { useNavigate } from "react-router-dom";
 
