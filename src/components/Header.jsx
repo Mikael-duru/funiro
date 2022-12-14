@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="container mx-auto">
       <nav className="bg-[#F9F1E7]">
-        <div className="px-4 sm:px-6 lg:px-6 xxl:pl-[6.5625rem] xxl:pr-[2.875rem] py-8 xxl:py-10">
+        <div className="px-4 sm:px-6 lg:px-6 xxl:pl-[6.5625rem] xxl:pr-[2.875rem] py-8 xxl:pt-10 xxl:pb-14">
           <div className="flex items-center justify-between gap-10 h-[45px]">
             <div className="flex-shrink-0">
               <h3 className="font-bold text-2xl text-black"><a href="/">Funiro.</a></h3>
