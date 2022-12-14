@@ -4,7 +4,7 @@ import "./AllProducts.css";
 import "../App.css"
 
 const AllProducts = () => {
-  const PdtData = AllProductData.map((data, index) => (
+  const AllPdtData = AllProductData.map((data, index) => (
     <div className="relative group">
       <div className="bg-[#F4F5F7] Card" key={index}>
         <img alt="Avatar" src={data.image} />
@@ -34,7 +34,7 @@ const AllProducts = () => {
     <div>
       <div className="AllProductContainer">
         <h2 className="font-bold text-4xl text-center my-10">Our Products</h2>
-        <div className="grid grid-cols-4 gap-4 w-max">{PdtData}</div>
+        <div className="grid grid-cols-4 gap-4 w-max ">{AllPdtData}</div>
       </div>
     </div>
   );
