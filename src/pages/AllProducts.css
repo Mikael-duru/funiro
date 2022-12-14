@@ -1,10 +1,8 @@
   .AllProductContainer {
     max-width: 85%;
     margin: 0 auto;
-    height: 100vh;
   }
   .Card {
-    height: 70vh;
     width:21vw;
   }
   

@@ -1,13 +1,14 @@
 import React from "react";
 import AllProductData from "../data/AllProductData";
 import "./AllProducts.css";
+import "../App.css"
 
 const AllProducts = () => {
   const PdtData = AllProductData.map((data, index) => (
     <div className="relative group">
       <div className="bg-[#F4F5F7] Card" key={index}>
         <img alt="Avatar" src={data.image} />
-        <div className="pl-5">
+        <div className="pl-5 py-5">
           <h2 className="text-2xl font-bold py-5">{data.name}</h2>
           <p className="text-lg font-bold text-[#898989]">{data.des}</p>
           <div className="flex mt-3">
