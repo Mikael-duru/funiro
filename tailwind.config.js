@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    screens: {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "xxl": "1440px",
+    },
     extend: {
       colors: {
         primary: "#E89F71",
@@ -9,7 +16,8 @@ module.exports = {
         lightGray: "#616161",
         midGray: "#828282",
         darkGray: "#3A3A3A",
-        lightBg: "#F4F5F7"
+        lightBg: "#F4F5F7",
+        grayThree: "#898989"
       },
       spacing: {
         "2.1": "0.625rem",
@@ -22,7 +30,7 @@ module.exports = {
         contact: "249px",
         form: "256.09px",
         formButton: "48.68px",
-        "1.5/12": "10%"
+        "1.5/12": "10.2%"
       }
     },
   },

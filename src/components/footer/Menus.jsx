@@ -3,7 +3,7 @@ import React from 'react';
 const Menus = () => {
   let url = "#";
   return (
-    <div className='2xl:w-1.5/12'>
+    <div className='xxl:w-1.5/12'>
       <h3 className="font-bold text-2xl text-black pb-3.3">Menu</h3>
       <ul className="flex flex-col gap-3.3 font-black text-base text-lightGray">
         <li><a className="hover:text-primary" href={url}>Products</a></li>

@@ -1,6 +1,6 @@
 // import Route when you uncomment element within the Routes, and uncomment element import from its folder
-import { BrowserRouter as Router, Routes} from "react-router-dom";
-// import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
 // import Products from "./pages/Products";
 // import Cart from "./pages/Cart";
 // import Header from "./components/Header";
@@ -12,9 +12,9 @@ function App() {
     <Router>
       {/* <Header /> */}
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/product" element={<Products />} />
-        <Route path="/cart" element={<Cart />} /> */}
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/products" element={<Products />} /> */}
+        {/* <Route path="/cart" element={<Cart />} /> */}
       </Routes>
       <Footer />
     </Router>

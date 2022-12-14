@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="md:pr-2.2 2xl:w-1/5">
+    <div className="md:pr-2.2 xxl:w-1/5">
       <h3 className="font-bold text-2xl text-black pb-4"><a href="/">Funiro.</a></h3>
       <ul className="flex flex-col gap-1.5 text-lightGray font-normal text-base">
         <li className="lg:w-contact">Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</li>

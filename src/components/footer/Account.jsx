@@ -3,7 +3,7 @@ import React from 'react';
 const Account = () => {
   let url = "#";
   return (
-    <div className="md:pr-2 2xl:w-1.5/12">
+    <div className="xxl:w-1.5/12">
       <h3 className="font-bold text-2xl text-black pb-4">Account</h3>
       <ul className="flex flex-col gap-4 font-black text-base text-lightGray">
         <li><a className='hover:text-primary' href={url}>My Account</a></li>
