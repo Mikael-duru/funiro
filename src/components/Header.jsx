@@ -93,7 +93,7 @@ const Header = () => {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden absolute bg-[#F9F1E7] w-full" id="mobile-menu">
+            <div className="md:hidden bg-[#F9F1E7] w-full" id="mobile-menu">
               <ul ref={ref} className="flex flex-col px-2 pt-2 space-y-1 sm:px-3">
                 <li className="px-3 pb-4">
                   <a href="/products" className="font-black hover:text-primary text-darkGray text-base">
