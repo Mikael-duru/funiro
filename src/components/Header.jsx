@@ -20,13 +20,13 @@ const Header = () => {
                 <a href="/products" className="mr-8 lg:mr-[3.1943rem] font-black hover:scale-105 text-darkGray text-base">
                   Products
                 </a>
-                <form className="flex items-center border-1 bg-white shadow-sm">
+                <form className="flex items-center border-1 bg-white shadow-sm hover:ring-1 hover:ring-primary">
                   <div className="pt-[0.9581rem] px-[1.0031rem] pb-[1.0206rem] ">
                     <button className="flex items-center justify-center">
                       <img src={searchIcon} alt="" />
                     </button>
                   </div>
-                  <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray focus:outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
+                  <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
                 </form>
               </div>
             </div>
@@ -102,13 +102,13 @@ const Header = () => {
                 </li>
 
                 <li className="px-3 pb-4">
-                  <form className="flex items-center border-1 bg-white shadow-sm">
+                  <form className="flex items-center border-1 bg-white shadow-sm hover:ring-1 hover:ring-primary">
                     <div className="pt-[0.9581rem] px-[1.0031rem] pb-[1.0206rem] ">
                       <button className="flex items-center justify-center">
                         <img src={searchIcon} alt="" />
                       </button>
                     </div>
-                    <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray focus:outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
+                    <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
                   </form>
                 </li>
 
