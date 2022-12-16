@@ -1,19 +1,14 @@
   .FuniroContainer {
-    position: relative;
-    max-width:85%;
-    margin: 0 auto;
+    /* max-width:85%; */
+    /* margin: 0 auto; */
   }
-  
-  .ImgContainer {
-    position: absolute;
-    top: 5%;
-  }
-  
-  .ImageContainer-1 {
+
+  /* .ImageContainer-1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
+    flex-wrap: wrap;
     margin-top:10%;
   }
   
@@ -21,9 +16,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-  }
-
-
-
-  
+    gap: 2em;
+  } */

@@ -1,20 +1,25 @@
 import React from "react";
 import AllProductData from "../data/AllProductData";
 import "./AllProducts.css";
-import "../App.css"
 
 const AllProducts = () => {
-  const AllPdtData = AllProductData.map((data, index) => (
-    <div className="relative group">
-      <div className="bg-[#F4F5F7] Card" key={index}>
+  const AllPdtData = AllProductData.map((data) => (
+    <div className="relative group" key={data.id}>
+      <div className="bg-[#F4F5F7] Card">
         <img alt="Avatar" src={data.image} />
         <div className="pl-5 py-5">
-          <h2 className="text-2xl font-bold py-5">{data.name}</h2>
-          <p className="text-lg font-bold text-[#898989]">{data.des}</p>
+          <h2 className="text-2xl font-bold py-5 max-sm:text-xl lg:text-xl text-left">
+            {data.name}
+          </h2>
+          <p className="text-lg font-bold text-[#898989] sm:text-lg lg:text-lg text-left">
+            {data.des}
+          </p>
           <div className="flex mt-3">
-            <p className="mr-3 text-2xl font-bold">{data.currentPrice}</p>
+            <p className="mr-3 text-2xl font-bold sm:text-lg lg:text-lg">
+              {data.currentPrice}
+            </p>
             <p>
-              <del className="font-bold ml-5 text-[#B0B0B0]">
+              <del className="font-bold ml-5 text-[#B0B0B0] sm:text-sm lg:text-sm">
                 {data.previousPrice}
               </del>
             </p>
@@ -22,8 +27,9 @@ const AllProducts = () => {
         </div>
       </div>
 
-      <div className="absolute top-0 w-full left-0 h-0 flex justify-center items-center  bg-black opacity-0 group-hover:h-full group-hover:opacity-60 duration-500 transition ease-in-out ">
-        <button className="bg-white text-[#e89f71] font-bold py-5 group-hover:opacity-100 rounded px-20">
+      {/* Product On Hover*/}
+      <div className="absolute top-0 w-full left-0 h-0 flex justify-center items-center  bg-[rgba(0,0,0,.5)] opacity-0 group-hover:h-full group-hover:opacity-100 duration-500 transition ease-in-out ">
+        <button className="bg-white text-[#e89f71] font-bold py-5 group-hover:opacity-100 rounded group-hover:bg-white px-20">
           Add to Cart
         </button>
       </div>
@@ -31,10 +37,13 @@ const AllProducts = () => {
   ));
 
   return (
-    <div>
-      <div className="AllProductContainer">
+    // PRODUCT SECTION
+    <div className="container mx-auto">
+      <div className="ProductContainer grid place-content-center lg:pl-[45px] xl:pl-[100px] xl:pr-[104px] text-center">
         <h2 className="font-bold text-4xl text-center my-10">Our Products</h2>
-        <div className="grid grid-cols-4 gap-4 w-max ">{AllPdtData}</div>
+        <div className="grid gap-4 lg:grid-cols-3 lg:mx-6 xl:grid-cols-4 md:grid-cols-2 ">
+          {AllPdtData}
+        </div>
       </div>
     </div>
   );
