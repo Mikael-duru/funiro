@@ -21,6 +21,8 @@ const Funiro = () => {
             #FuniroFurniture
           </h1>
         </div>
+
+
         <div className="ImgContainer px-5  mx-auto ">
           <div className="ImageContainer-1 lg:grid lg:grid-cols-3 lg:justify-center items-center flex flex-col mt-10 gap-4">
             <img alt="Product-Image1" src={Share1} />
@@ -28,13 +30,16 @@ const Funiro = () => {
             <img alt="Product-Image3" src={Share3} />
           </div>
 
-          <div className="ImageContainer-2 lg:grid lg:grid-cols-4 lg:justify-center items-center flex flex-col gap-4">
+          <div className="ImageContainer-2 lg:grid lg:grid-cols-4 lg:justify-center lg:mx-10 mt-5 flex flex-col gap-4">
             <img alt="Product-Image4" src={Share4} />
             <img alt="Product-Image5" src={Share5} />
             <img alt="Product-Image6" src={Share6} />
             <img alt="Product-Image7 " src={Share7} />
           </div>
         </div>
+
+
+       
       </div>
     </div>
   );

@@ -284,7 +284,7 @@ const AllProductData = [
         previousPrice:"Rp 14.000.000"
     },
     {
-        id:28,
+        id:32,
         image:BrownCush,
         name:"Beautiful Brown Cushion",
         des:"Comfortable Reading Chair",
@@ -292,7 +292,7 @@ const AllProductData = [
         previousPrice:"Rp 16.000.000"
     },
     {
-        id:28,
+        id:33,
         image:WallSet1,
         name:"Beautiful Wall Set",
         des:"Wall Furniture",

@@ -41,7 +41,7 @@ const AllProducts = () => {
     <div className="container mx-auto">
       <div className="ProductContainer grid place-content-center lg:pl-[45px] xl:pl-[100px] xl:pr-[104px] text-center">
         <h2 className="font-bold text-4xl text-center my-10">Our Products</h2>
-        <div className="grid gap-4 lg:grid-cols-3 lg:mx-6 xl:grid-cols-4 md:grid-cols-2 ">
+        <div className="grid gap-4 lg:grid-cols-3 max-sm:mx-5 md:mx-6 lg:mx-6 xl:grid-cols-4 md:grid-cols-2 ">
           {AllPdtData}
         </div>
       </div>
