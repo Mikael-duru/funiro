@@ -2,7 +2,7 @@ import React from "react";
 // import Products from "../components/Products/Products";
 // import Funiro from "../components/Products/Funiro";
 import Checkout from "./Checkout"
-// import AllProducts from "./AllProducts";
+import AllProducts from "./AllProducts";
 
 const Home = () => {
   
@@ -20,9 +20,9 @@ const Home = () => {
         <Checkout />
       </section>
 
-      {/* <section>
+      <section>
         <AllProducts />
-      </section> */}
+      </section>
     </main>
   );
 };
