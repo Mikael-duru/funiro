@@ -10,29 +10,29 @@ const Header = () => {
   return (
     <header className="container mx-auto">
       <nav className="bg-[#F9F1E7]">
-        <div className="px-4 sm:px-6 lg:px-6 xxl:pl-[6.5625rem] xxl:pr-[2.875rem] py-8 xxl:py-10">
-          <div className="flex items-center justify-between gap-10 h-[45px]">
+        <div className="px-4 sm:px-6 lg:px-6 xxl:pl-[6.5625rem] xxl:pr-[2.875rem] py-8 xxl:pt-10 xxl:pb-14">
+          <div className="flex items-center justify-between h-[45px]">
             <div className="flex-shrink-0">
               <h3 className="font-bold text-2xl text-black"><a href="/">Funiro.</a></h3>
             </div>
             <div className="hidden md:block">
-              <div className="flex items-center gap-8 lg:gap-[3.1943rem]">
-                <a href="/products" className="font-black hover:scale-105 text-darkGray text-base">
+              <div className="flex items-center ml-10">
+                <a href="/products" className="mr-8 lg:mr-[3.1943rem] font-black hover:scale-105 text-darkGray text-base">
                   Products
                 </a>
-                <form className="flex items-center border-1 bg-white shadow-sm">
+                <form className="flex items-center border-1 bg-white shadow-sm hover:ring-1 hover:ring-primary">
                   <div className="pt-[0.9581rem] px-[1.0031rem] pb-[1.0206rem] ">
                     <button className="flex items-center justify-center">
                       <img src={searchIcon} alt="" />
                     </button>
                   </div>
-                  <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray focus:outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
+                  <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
                 </form>
               </div>
             </div>
-            <div className="hidden md:block">
-              <div className="flex items-center gap-[2.1562rem]">
-                <a href="/cart" className="hover:scale-110"><img src={cart} alt="" /></a>
+            <div className="hidden md:block ml-10">
+              <div className="flex items-center">
+                <a href="/cart" className="hover:scale-110 mr-[2.1562rem]"><img src={cart} alt="" /></a>
                 <a href="/"><img src={userPic} alt="" /></a>
               </div>
             </div>
@@ -93,30 +93,30 @@ const Header = () => {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden absolute bg-[#F9F1E7] w-full" id="mobile-menu">
-              <ul ref={ref} className="flex flex-col gap-5 px-2 pt-2 pb-6 space-y-1 sm:px-3">
-                <li className="px-3">
+            <div className="md:hidden bg-[#F9F1E7] w-full" id="mobile-menu">
+              <ul ref={ref} className="flex flex-col px-2 pt-2 space-y-1 sm:px-3">
+                <li className="px-3 pb-4">
                   <a href="/products" className="font-black hover:text-primary text-darkGray text-base">
                     Products
                   </a>
                 </li>
 
-                <li className="px-3">
-                  <form className="flex items-center border-1 bg-white shadow-sm">
+                <li className="px-3 pb-4">
+                  <form className="flex items-center border-1 bg-white shadow-sm hover:ring-1 hover:ring-primary">
                     <div className="pt-[0.9581rem] px-[1.0031rem] pb-[1.0206rem] ">
                       <button className="flex items-center justify-center">
                         <img src={searchIcon} alt="" />
                       </button>
                     </div>
-                    <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray focus:outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
+                    <input className="w-full md:pr-16 lg:pr-[15.7018rem] text-sm font-normal text-lightGray outline-none" id="search" type="text" placeholder="Search for minimalist chair" />
                   </form>
                 </li>
 
-                <li className="px-3">
+                <li className="px-3  pb-4">
                   <a href="/cart" className="hover:scale-110"><img src={cart} alt="" /></a>
                 </li>
 
-                <li className="px-3">
+                <li className="px-3  pb-5">
                   <a href="/"><img src={userPic} alt="" /></a>
                 </li>
               </ul>

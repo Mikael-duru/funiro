@@ -31,6 +31,9 @@ module.exports = {
         form: "256.09px",
         formButton: "48.68px",
         "1.5/12": "10.2%"
+      },
+      backgroundImage: {
+        "hero": "url('images/hero-bg.png')",
       }
     },
   },
