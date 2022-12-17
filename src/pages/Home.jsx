@@ -1,7 +1,7 @@
 import React from "react";
 // import Products from "../components/Products/Products";
 // import Funiro from "../components/Products/Funiro";
-// import Checkout from "./Checkout"
+import Checkout from "./Checkout"
 // import AllProducts from "./AllProducts";
 
 const Home = () => {
