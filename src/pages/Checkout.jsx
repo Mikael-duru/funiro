@@ -9,10 +9,12 @@ const Checkout = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
+  const [amount, setAmount] = useState("");
 
   const resetForm = () => {
     setEmail("");
     setName("");
+    setAmount("");
     setNumber("");
     setAddress("");
   };
@@ -20,6 +22,7 @@ const Checkout = () => {
   const componentProps = {
     email,
     address,
+    amount,
     metadata: {
       name,
       number,
@@ -78,6 +81,17 @@ const Checkout = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
+                  className="w-full bg-[#efc1a5] p-4 rounded-xl outline-none text-white shadow-md"
+                />
+              </div>
+              <div className="checkout-field max-w-xs mb-8">
+                <label className="text-white text-xl font-bold">Amount:</label>
+                <input
+                  type="text"
+                  id="amount"
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
+                  placeholder="Amount"
                   className="w-full bg-[#efc1a5] p-4 rounded-xl outline-none text-white shadow-md"
                 />
               </div>
