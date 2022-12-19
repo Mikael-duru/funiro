@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div className="hidden md:block">
               <div className="flex items-center ml-10">
-                <a href="/products" className="mr-8 lg:mr-[3.1943rem] font-black hover:scale-105 text-darkGray text-base">
+                <a href="/AllProducts" className="mr-8 lg:mr-[3.1943rem] font-black hover:scale-105 text-darkGray text-base">
                   Products
                 </a>
                 <form className="flex items-center border-1 bg-white shadow-sm hover:ring-1 hover:ring-primary">
@@ -96,7 +96,7 @@ const Header = () => {
             <div className="md:hidden bg-[#F9F1E7] w-full" id="mobile-menu">
               <ul ref={ref} className="flex flex-col px-2 pt-2 space-y-1 sm:px-3">
                 <li className="px-3 pb-4">
-                  <a href="/products" className="font-black hover:text-primary text-darkGray text-base">
+                  <a href="/AllProducts" className="font-black hover:text-primary text-darkGray text-base">
                     Products
                   </a>
                 </li>
