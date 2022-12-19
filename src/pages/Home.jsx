@@ -11,7 +11,6 @@ const Home = () => {
       <Features />
       <Products />
       <Funiro />
-
     </main>
   );
 }
