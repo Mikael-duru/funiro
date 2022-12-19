@@ -5,7 +5,7 @@ import Products from "./pages/Products";
 // import Cart from "./pages/Cart";
 import Header from "./components/Header";
 import Footer from "./components/footer/Footer"
-import AllProducts from "./pages/AllProducts"
+// import AllProducts from "./pages/AllProducts"
 import './App.css';
 function App() {
   return (
@@ -14,12 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/AllProducts" element={<AllProducts />} />
-
         {/* <Route path="/cart" element={<Cart />} /> */}
       </Routes>
       <Footer />
     </Router>
   );
 }
+
 export default App;

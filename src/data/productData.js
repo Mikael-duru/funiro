@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import Images
 // Create a variable productData
 // Assign it to an Array of Objects
@@ -80,3 +81,5 @@ const ProductData = [
     }
 ]
 export default ProductData;
+=======
+>>>>>>> 966090e3dade21faae238dc423a9d12895da4fb7
