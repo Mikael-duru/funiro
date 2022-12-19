@@ -1,7 +1,7 @@
 import React from "react";
 // import Products from "../components/Products/Products";
-// import Funiro from "../components/Products/Funiro";
-import Checkout from "./Checkout"
+import Funiro from "../components/Products/Funiro";
+// import Checkout from "./Checkout"
 // import AllProducts from "./AllProducts";
 
 const Home = () => {
@@ -12,13 +12,13 @@ const Home = () => {
         <Products />
       </section> */}
 
-      {/* <section>
-        <Funiro />
-      </section> */}
-
       <section>
-        <Checkout />
+        <Funiro />
       </section>
+
+      {/* <section>
+        <Checkout />
+      </section> */}
 
       {/* <section>
         <AllProducts />

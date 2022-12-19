@@ -7,7 +7,7 @@ const Checkout = () => {
   const publicKey = "pk_test_511b4f0272a7b917d3bb816b00416bd7a424804e";
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
+  // const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
   const [amount, setAmount] = useState("");
 
@@ -15,7 +15,7 @@ const Checkout = () => {
     setEmail("");
     setName("");
     setAmount("");
-    setNumber("");
+    // setNumber("");
     setAddress("");
   };
 
@@ -25,7 +25,7 @@ const Checkout = () => {
     amount,
     metadata: {
       name,
-      number,
+      // number,
     },
     publicKey,
     text: "Buy Now",
@@ -95,7 +95,7 @@ const Checkout = () => {
                   className="w-full bg-[#efc1a5] p-4 rounded-xl outline-none text-white shadow-md"
                 />
               </div>
-              <div className="checkout-field max-w-xs mb-8">
+              {/* <div className="checkout-field max-w-xs mb-8">
                 <label className="text-white text-xl font-bold">Number:</label>
                 <input
                   type="number"
@@ -105,7 +105,7 @@ const Checkout = () => {
                   placeholder="Number"
                   className="w-full bg-[#efc1a5] p-4 rounded-xl outline-none text-white shadow-md"
                 />
-              </div>
+              </div> */}
               <div className="checkout-field max-w-xs mb-8">
                 <label className="text-white text-xl font-bold">Address:</label>
                 <input

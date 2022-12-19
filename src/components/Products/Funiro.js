@@ -22,24 +22,20 @@ const Funiro = () => {
           </h1>
         </div>
 
-
-        <div className="ImgContainer px-5  mx-auto ">
-          <div className="ImageContainer-1 lg:grid lg:grid-cols-3 lg:justify-center items-center flex flex-col mt-10 gap-4">
-            <img alt="Product-Image1" src={Share1} />
-            <img alt="Product-Image2" src={Share2} />
-            <img alt="Product-Image3" src={Share3} />
+        <div className="ImgContainer w-[1410px] px-5  mx-auto ">
+          <div className="lg:grid lg:grid-cols-3 lg:justify-center items-center flex flex-col mt-10 gap-4">
+            <img className="w-[274px] h-[382px]" alt="Product-Image1" src={Share1} />
+            <img className="w-[451px] h-[312px]" alt="Product-Image2" src={Share2} />
+            <img className="w-[654px] h-[348px]" alt="Product-Image3" src={Share3} />
           </div>
 
-          <div className="ImageContainer-2 lg:grid lg:grid-cols-4 lg:justify-center lg:mx-10 mt-5 flex flex-col gap-4">
-            <img alt="Product-Image4" src={Share4} />
-            <img alt="Product-Image5" src={Share5} />
-            <img alt="Product-Image6" src={Share6} />
-            <img alt="Product-Image7 " src={Share7} />
+          <div className="lg:grid lg:grid-cols-4 lg:justify-center lg:mx-10 mt-5 flex flex-col gap-4">
+            <img className="w-[381px] h-[323px]" alt="Product-Image4" src={Share4} />
+            <img className="w-[344px] h-[224px]" alt="Product-Image5" src={Share5} />
+            <img className="w-[178px] h-[224px]" alt="Product-Image6" src={Share6} />
+            <img className="w-[441px] h-[300px]" alt="Product-Image7 " src={Share7} />
           </div>
         </div>
-
-
-       
       </div>
     </div>
   );
