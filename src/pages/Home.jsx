@@ -8,9 +8,10 @@ const Home = () => {
   return (
     <main>
       <Hero />
+      <Features />
       <Products />
       <Funiro />
-      <Features />
+
     </main>
   );
 }
