@@ -1,10 +1,10 @@
 import React from "react";
-import ProductData from "../../data/ProductData";
+import ProductData from "../../data/productData";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Show More Button Navigation
 const Product = () => {
-  const navigate = useNavigate();
 
   // Product Mapping
   const PdtData = ProductData.map((data) => (
@@ -52,10 +52,9 @@ const Product = () => {
         {/* Show More Button */}
         <div className="flex justify-center my-8">
           <button
-            onClick={() => navigate("AllProducts")}
             className="px-16 py-4 border-2 border-[#E89F71] text-[#E89F71] font-bold"
           >
-            Show More
+            <Link to="/AllProducts">Show More</Link>
           </button>
         </div>
       </div>

@@ -1,30 +1,18 @@
 import React from "react";
-// import Products from "../components/Products/Products";
+import Features from "../components/Features";
+import Hero from "../components/Hero";
+import Products from "../components/Products/Products"
 import Funiro from "../components/Products/Funiro";
-// import Checkout from "./Checkout"
-// import AllProducts from "./AllProducts";
 
 const Home = () => {
-  
   return (
     <main>
-       {/* <section>
-        <Products />
-      </section> */}
-
-      <section>
-        <Funiro />
-      </section>
-
-      {/* <section>
-        <Checkout />
-      </section> */}
-
-      {/* <section>
-        <AllProducts />
-      </section> */}
+      <Hero />
+      <Products />
+      <Funiro />
+      <Features />
     </main>
   );
-};
+}
 
 export default Home;

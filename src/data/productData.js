@@ -79,5 +79,4 @@ const ProductData = [
         previousPrice:""
     }
 ]
-
-export default ProductData
+export default ProductData;

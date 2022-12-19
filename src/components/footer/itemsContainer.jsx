@@ -6,7 +6,7 @@ import Form from "./Form";
 
 const ItemsContainer = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap gap-12 md:gap-16 pl-6 pr-6 md:pr-1">
+    <div className="flex flex-col md:flex-row flex-wrap space-y-10 > * lg:space-y-0 pr-6 xxl:pr-[5.25rem]">
       <Contact />
       <Menus />
       <Account />
