@@ -2,6 +2,9 @@ import "../App.css";
 import React, { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import PayNow from "../images/PayNow.jpg";
+// import CartContext from "../Context/Cart/CartContext.jsx"
+// import { useContext } from "react";
+
 
 const Checkout = () => {
   const publicKey = "pk_test_511b4f0272a7b917d3bb816b00416bd7a424804e";
@@ -9,17 +12,21 @@ const Checkout = () => {
   const [name, setName] = useState("");
   // const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
-  const [amount, setAmount] = useState("");
+  // const [amount, setAmount] = useState("");
+  // const { total } = useContext(CartContext);
+  const amount = 100000;
+
 
   const resetForm = () => {
     setEmail("");
     setName("");
-    setAmount("");
+    // setAmount("");
     // setNumber("");
     setAddress("");
   };
 
   const componentProps = {
+
     email,
     address,
     amount,
@@ -37,6 +44,7 @@ const Checkout = () => {
     },
     onClose: () => alert("Wait! You need this, don't go!!!!"),
   };
+
 
   return (
     <div>
@@ -87,11 +95,12 @@ const Checkout = () => {
               <div className="checkout-field max-w-xs mb-8">
                 <label className="text-white text-xl font-bold">Amount:</label>
                 <input
-                  type="text"
+                  type="number"
                   id="amount"
                   value={amount}
-                  onChange={(e) => setAmount(e.target.value)}
-                  placeholder="Amount"
+                  readOnly
+                  // onChange={(e) => setAmount({total})}
+                  // placeholder="Amount"
                   className="w-full bg-[#efc1a5] p-4 rounded-xl outline-none text-white shadow-md"
                 />
               </div>
